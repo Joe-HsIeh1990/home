@@ -1,0 +1,8 @@
+.detail {
+    &-img{
+        @include boxshadow;
+    }
+    &-container{
+        @include boxshadow;
+    }
+}

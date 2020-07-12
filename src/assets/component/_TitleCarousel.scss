@@ -1,0 +1,52 @@
+.header {
+  @include phone(){
+    display: none;
+  }
+  height: 100vh;
+  &-list1 {
+    position: relative;
+    background: url("assets/images/Titlebg.png") center center no-repeat ;
+    background-size: cover;
+    height:92.5vh;
+  }
+  &-list2 {
+    position: relative;
+    background: url("assets/images/Welcome-To-ME-2020-01-25-Portal-All-bm.jpg") center center no-repeat ;
+    background-size: cover;
+    height:92.5vh;
+  }
+  &-text {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 20%;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    h1 {
+      font-size: 28px;
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+    @include pad() {
+      width: 25%;
+      h1 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+    @include phone() {
+      right: 0;
+      width: 45%;
+      h1 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.new {
+  position: relative;
+  background-color: #000000;
+  &-container1 {
+    height: 100vh;
+    @include phone() {
+      height: 90vh;
+    }
+  }
+  &-container2 {
+    height: 100vh;
+  }
+  &-photo {
+    background: url("assets/images/newbigger.png") center center no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  &-photo2 {
+    background: url("assets/images/ffdo.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    @include pad() {
+      height: 50%;
+    }
+  }
+  &-content {
+    height: 100%;
+  }
+  &-list {
+    height: 100%;
+    background-color: #000000;
+    @include phone() {
+      height: 50%;
+    }
+  }
+  &-txt {
+    height: 50%;
+  }
+  .btn {
+    height: auto;
+  }
+}
+.section {
+  margin-bottom: 48px;
+  background: #000000;
+  &-title {
+    height: auto;
+    h2 {
+      white-space: nowrap;
+      width: 30%;
+      text-align: center;
+    }
+  }
+}
+.arr {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  &-box {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: $color-four;
+    position: absolute;
+    z-index: 100;
+  }
+  &-item1 {
+    height: 30px;
+    width: 25px;
+    border: 2px solid #ffb938;
+    border-radius: 30%;
+  }
+  i {
+    color: #ffb938;
+  }
+  &-inside {
+    height: 10px;
+    width: 2px;
+    background-color: #ffb938;
+  }
+}
+.card {
+  &-text {
+    &-btn {
+      display: none;
+      @include phone() {
+        display: block;
+      }
+    }
+  }
+  &-img {
+    img {
+      height: auto;
+    }
+  }
+}
+.gotop {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  border: 3px solid #fff;
+  background-color: #000000;
+  z-index: 3;
+
+}
+.page {
+  &-dash {
+    @include phone() {
+      display: none;
+    }
+  }
+  &-phone {
+    display: none;
+    @include phone() {
+      display: flex;
+    }
+  }
+}

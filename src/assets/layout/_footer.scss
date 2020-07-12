@@ -1,0 +1,178 @@
+.foot {
+    background-color: #1b1b1b;
+    &-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 36px;
+        @include pad() {
+            max-width: 672px;
+        }
+        @include phone() {
+            padding-top: 24px;
+            max-width: 352px;
+        }
+    }
+    &-top {
+        width: 100%;
+        margin-bottom: 32px;
+        @include phone() {
+            display: none;
+        }
+        @include pad() {
+            margin-bottom: 24px;
+        }
+        .top {
+            &-item {
+                margin-right: 48px;
+                @include pad() {
+                    margin-right: 40px;
+                }
+                a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            &-img {
+                img {
+                    margin-left: 32px;
+                    @include pad() {
+                        width: 24px;
+                        margin-left: 24px;
+                    }
+                }
+            }
+        }
+    }
+    &-main {
+        margin-bottom: 24px;
+        @include phone() {
+            margin-bottom: 16px;
+        }
+        .main {
+            &-item {
+                width: 100%;
+                margin-bottom: 16px;
+                height: auto;
+                @include phone() {
+                    margin-bottom: 8px;
+                }
+                h2 {
+                    font-size: 36px;
+                    line-height: 54px;
+                    color: #fff;
+                    @include pad() {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                    @include phone() {
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                }
+                img {
+                    @include pad() {
+                        width: 24px;
+                    }
+                    @include phone() {
+                        width: 13px;
+                    }
+                }
+            }
+            &-first {
+                margin-left: 23px;
+                @include pad() {
+                    margin-left: 12px;
+                }
+                @include phone() {
+                    margin-left: 8px;
+                }
+            }
+            &-sec {
+                margin-left: 12px;
+                @include pad() {
+                    margin-left: 8px;
+                }
+                @include phone() {
+                    margin-left: 5px;
+                }
+            }
+            &-img {
+                height: auto;
+                display: none;
+                margin-bottom: 0;
+                @include phone() {
+                    display: flex;
+                }
+                img {
+                    @include phone() {
+                        width: 24px;
+                        height: 29.6px;
+                        margin-left: 24px;
+                    }
+                }
+            }
+        }
+    }
+    &-bottom {
+        border-top: 2px solid #fff;
+        padding-top: 24px;
+        padding-bottom: 27.3px;
+        @include phone() {
+            padding-top: 16px;
+            padding-bottom: 24px;
+            position: relative;
+        }
+        .bottom {
+            &-item {
+                @include pad() {
+                    img {
+                        display: none;
+                    }
+                }
+                @include phone() {
+                    width: 100%;
+                    img {
+                        display: none;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #fff;
+                    @include phone() {
+                        font-size: 14px;
+                        line-height: 21px;
+                        margin-bottom: 8px;
+                    }
+                }
+                a {
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #fff;
+                    text-decoration: none;
+                    margin-left: 62px;
+                    @include pad() {
+                        margin-left: 24px;
+                    }
+                    @include phone() {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+        .phone-logo {
+            display: none;
+            @include phone() {
+                position: absolute;
+                bottom: 20px;
+                right: 0;
+                display: block;
+                img {
+                    width: 46px;
+                }
+            }
+        }
+    }
+}

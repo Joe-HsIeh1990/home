@@ -1,0 +1,25 @@
+// helper
+@import "./helper/myvariables";
+@import "~bootstrap/scss/functions";
+@import "./helper/_variables";
+@import "~bootstrap/scss/bootstrap";
+@import './helper/utilities';
+@import "./grid";
+@import "./base";
+// mixin
+@import "./mixin";
+// layout
+@import "./layout/back/AdminNav";
+@import "./layout/navbar";
+@import "./layout/footer";
+
+// component
+@import "./component/TitleCarousel";
+// pages
+@import "./pages/home";
+@import "./pages/products";
+@import "./pages/login";
+@import "./pages/ProductDetail";
+@import "./pages/customcart";
+@import "./pages/custompay";
+@import "./pages/customcomplete";
